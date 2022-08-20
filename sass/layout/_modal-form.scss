@@ -1,0 +1,121 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-form-field-marg {
+  margin-bottom: 20px;
+}
+
+.modal-form-slogan {
+  @include font(20px, 700, 23px);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-form-field-name {
+  display: block;
+  @include font(12px, 400, 14px);
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.modal-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: fill var(--transition-dur-tf);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 16px;
+
+  padding: 12px 42px;
+  outline: none;
+
+  transition: border-color var(--transition-dur-tf);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-comment {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  @include font(12px, 400, 14px);
+  letter-spacing: 0.01em;
+  outline: none;
+  padding: 12px 16px;
+
+  transition: border-color var(--transition-dur-tf);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-check-text {
+  @extend %align;
+  margin-bottom: 30px;
+
+  @include font(14px, 400, 24px);
+  color: var(--secondary-text-color);
+
+  &::before {
+    display: block;
+    width: 16px;
+    height: 15px;
+    content: '';
+    border: 1px solid var(--primary-text-color);
+    border-radius: 4px;
+    margin-right: 7px;
+
+    transition: var(--transition-dur-tf);
+  }
+
+  .modal-form-check:checked + &::before {
+    background-image: url(../images/icon\ check.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+}
+
+.modal-form-check:focus + .modal-form-check-text::before {
+  border: 1.1px solid var(--primary-text-color);
+}
+
+.agreement-name {
+  color: var(--accent-color);
+}

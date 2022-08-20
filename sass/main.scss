@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/plcaholders";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/container";
+
+@import "./components/section";
+@import "./components/title";
+@import "./components/modal-btn";
+@import "./components/modal-btn-submit";
+@import "./components/btn-portfolio";
+
+
+@import "./layout/header";
+@import "./layout/hero.scss";
+@import "./layout/plus";
+@import "./layout/examples";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/our-portfolio";
+@import "./layout/backdrop-modal";
+@import "./layout/modal-wind";
+@import "./layout/modal-form";

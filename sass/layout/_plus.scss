@@ -1,0 +1,33 @@
+.plus-list-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.plus-item-wrapper {
+    @extend %align;
+    /* width: 270px; */
+    height: 120px;
+    background-color: var(--secondary-bcg);
+    margin-bottom: 30px;
+}
+
+.plus-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus-item {
+    width: 270px;
+}
+
+.plus-title {
+    margin-bottom: 10px;
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+}
+
+.plus-text {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}

@@ -45,7 +45,6 @@
     flex-direction: column;
     padding: 48px 40px;
     height: 100vh;
-
   }
 }
 
@@ -80,6 +79,12 @@
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu-contact__text-phone {
+    font-size: 26px;
+  }
+}
+
 .mobile-menu-contact__text-mail {
   @include font(24px, 500, 28px);
   letter-spacing: 0.02em;
@@ -102,7 +107,7 @@
 .mobile-menu-social-list {
   display: flex;
   align-items: center;
-  
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social__list-item {
@@ -119,5 +124,9 @@
 .mobile-menu-social__list-link {
   @include font(18px, 500, 22px);
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.navigation-menu__link--current {
   color: var(--accent-color);
 }

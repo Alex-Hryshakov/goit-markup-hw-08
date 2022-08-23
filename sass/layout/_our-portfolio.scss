@@ -1,55 +1,52 @@
 @media screen and (max-width: 767px) {
   .nav-on-portfolio-list {
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-    .portfolio-examples-list {
-      display: block;
-    }
+  .portfolio-examples-list {
+    display: block;
+  }
 
-    .portfolio-examples-item:not(:last-child) {
-      margin-bottom: 30px;
-
-    }
+  .portfolio-examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .nav-on-portfolio-list {
-      
-      justify-content: center;
-    }
-  
-  .portfolio-examples-list {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
+    justify-content: center;
+  }
 
-    .portfolio-examples-item {
-          width: calc((100% - 30px)/2);
-    }
+  .portfolio-examples-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-examples-item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .nav-on-portfolio-list {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 50px;
-    }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
-        .portfolio-examples-list {
-          display: flex;
-          gap: 30px;
-          flex-wrap: wrap;
-        }
+  .portfolio-examples-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 
-        .portfolio-examples-item {
-          flex-basis: calc((100% - 60px) / 3);
-        }
+  .portfolio-examples-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
-
 
 .nav-on-portfolio-list {
   display: flex;
@@ -73,7 +70,7 @@
   text-align: center;
   color: var(--primary-text-color);
   transition: color var(--transition-dur-tf), box-shadow var(--transition-dur-tf),
-  background-color var(--transition-dur-tf);
+    background-color var(--transition-dur-tf);
 
   &:hover,
   &:focus {
@@ -89,7 +86,6 @@
 .portfolio-examples-item {
   background: var(--thirty-bcg);
   border: 1px solid #eeeeee;
-  
 }
 
 .portfolio-examles-links {

@@ -1,18 +1,9 @@
-@media screen and (max-width: 1199px) {
-  .modal-wind {
-    width: 450px;
-    height: 609px;
-  }
-}
-
-
 .modal-wind {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: 100%;
   padding: 40px;
 
   background: var(--thirty-bcg);
@@ -24,10 +15,15 @@
   transition: var(--transition-dur-tf);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 450px) and (max-width: 1199px) {
   .modal-wind {
     width: 450px;
-    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wind {
+    width: 528px;
   }
 }
 
@@ -49,5 +45,3 @@
     fill: var(--accent-color);
   }
 }
-
-

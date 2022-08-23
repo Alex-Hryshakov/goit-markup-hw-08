@@ -1,15 +1,39 @@
+@media screen and (max-width: 767px) {
+  .clients-list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .clients-list-link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-link {
+    width: 226px;
+  }
+
+  .clients-list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .clients-list {
   display: flex;
 }
 
-.clients-list-icon {
+.clients-list-link {
   fill: var(--primary-icon-color);
-  transition: fill var(--transition-dur-tf);
-
-  .clients-list-link:hover &,
-  .clients-list-link:focus & {
-    fill: var(--accent-color);
-  }
 }
 
 .clients-list-link {
@@ -17,17 +41,13 @@
   height: 92px;
   @extend %align;
   color: var(--link-client-color);
-
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  transition: border var(--transition-dur-tf);
+  transition: border var(--transition-dur-tf), fill var(--transition-dur-tf);
 
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
   }
-}
-
-.clients-item:not(:last-child) {
-  margin-right: 30px;
 }

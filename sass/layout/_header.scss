@@ -15,6 +15,7 @@
   .header {
     border: 1px solid #ececec;
   }
+  
   .header__container {
     display: flex;
     align-items: center;
@@ -164,6 +165,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+  
   .contact__list {
     display: flex;
     align-items: center;

@@ -1,3 +1,5 @@
+
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -112,6 +114,12 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form-check-text {
+    @include font(12px, 400, 14px);
+  }
+}
+
 .modal-form-check:focus + .modal-form-check-text::before {
   border: 1.1px solid var(--primary-text-color);
 }
@@ -119,3 +127,4 @@
 .agreement-name {
   color: var(--accent-color);
 }
+

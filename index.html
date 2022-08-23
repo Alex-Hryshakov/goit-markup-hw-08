@@ -70,11 +70,11 @@
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button type="button" class="mobile-menu__close-btn" data-menu-close>
-          <svg class="mobile-menu__close-icon" width="40" height="40">
-            <use href="./images/symbol-defs.svg#icon-close-modal-button"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu-navigation list">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-modal-button"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-navigation list">
             <li class="mobile-menu-navigation__item">
               <a class="mobile-menu-navigation__link navigation-menu__link--current link" href=""
                 >Студия</a
@@ -87,34 +87,36 @@
               <a class="mobile-menu-navigation__link link" href="">Контакты</a>
             </li>
           </ul>
-           <ul class="mobile-menu-contact__list list">
+          <ul class="mobile-menu-contact__list list">
             <li class="mobile-menu-contact__item-header">
-            <a class="mobile-menu-contact__link mobile-menu-contact__text-phone link" href="tel:+380961111111">
-               +38 096 111 11 11</a
-            >
-          </li>
-          <li class="mobile-menu-contact__item-header">
-            <a class="mobile-menu-contact__link mobile-menu-contact__text-mail link" href="mailto:info@devstudio.com">
-               info@devstudio.com</a
-            >
-          </li>
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__text-phone link"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__item-header">
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__text-mail link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
           </ul>
           <ul class="mobile-menu-social-list list">
             <li class="mobile-menu-social__list-item">
-              <a href="" class="mobile-menu-social__list-link link">Instagram
-              </a>
+              <a href="" class="mobile-menu-social__list-link link">Instagram </a>
             </li>
             <li class="mobile-menu-social__list-item">
-              <a href="" class="mobile-menu-social__list-link link">Twitter
-              </a>
+              <a href="" class="mobile-menu-social__list-link link">Twitter </a>
             </li>
             <li class="mobile-menu-social__list-item">
-              <a href="" class="mobile-menu-social__list-link link">Facebook
-              </a>
+              <a href="" class="mobile-menu-social__list-link link">Facebook </a>
             </li>
             <li class="mobile-menu-social__list-item">
-              <a href="" class="mobile-menu-social__list-link link">Linkedin
-              </a>
+              <a href="" class="mobile-menu-social__list-link link">Linkedin </a>
             </li>
           </ul>
         </div>
@@ -131,7 +133,7 @@
       </section>
 
       <!--Преимущества нашей компании-->
-      <!-- <section class="plus section">
+      <section class="plus section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества нашей компании</h2>
 
@@ -183,65 +185,111 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Примеры работ-->
-      <!-- <section class="examples section">
+      <section class="examples section">
         <div class="container">
           <h2 class="section-title title">Чем мы занимаемся</h2>
           <ul class="examples-list list">
             <li class="examples-img picture">
-              <img
-                class="examples-pict"
-                src="./images/box1.jpg"
-                alt="визуальный пример работы 1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/services/desktop-app-370/desktop-app-370.jpg    1x,
+                    ./images/desktop/services/desktop-app-370/desktop-app-370@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="examples-pict"
+                  src="./images/desktop/services/desktop-app-370/desktop-app-370.jpg"
+                  alt="визуальный пример работы 1"
+                />
+              </picture>
+
               <div class="examples-title-wrapper">
                 <p class="examples-title">Десктопные приложения</p>
               </div>
             </li>
             <li class="examples-img picture">
-              <img
-                class="examples-pict"
-                src="./images/box2.jpg"
-                alt="визуальный пример работы 2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/services/mobile-app-370/mobile-app-370.jpg    1x,
+                    ./images/desktop/services/mobile-app-370/mobile-app-370@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="examples-pict"
+                  src="./images/desktop/services/mobile-app-370/mobile-app-370.jpg"
+                  alt="визуальный пример работы 2"
+                />
+              </picture>
+
               <div class="examples-title-wrapper">
                 <p class="examples-title">Мобильные приложения</p>
               </div>
             </li>
             <li class="examples-img picture">
-              <img
-                class="examples-pict"
-                src="./images/box3.jpg"
-                alt="визуальный пример работы 3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/services/design-solutions-370/design-solutions-370.jpg    1x,
+                    ./images/desktop/services/design-solutions-370/design-solutions-370@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="examples-pict"
+                  src="./images/desktop/services/design-solutions-370/design-solutions-370.jpg"
+                  alt="визуальный пример работы 3"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="examples-title-wrapper">
                 <p class="examples-title">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Команда-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="picture"
-                src="./images/teamcard1.jpg"
-                alt="фото члена команды1"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/igor-270/igor-270.jpg    1x,
+                    ./images/desktop/team/igor-270/igor-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/igor-354/igor-354.jpg    1x,
+                    ./images/tablet/team/igor-354/igor-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/igor-450/igor-450.jpg    1x,
+                    ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="picture photo-team"
+                  src="./images/mobile/team/igor-450/igor-450.jpg"
+                  alt="фото члена команды1"
+                />
+              </picture>
+
               <div class="team-sign">
                 <h3 class="team-name-title">Игорь Демьяненко</h3>
                 <p class="team-speciality">Product Designer</p>
@@ -278,12 +326,35 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="picture"
-                src="./images/teamcard2.jpg"
-                alt="фото члена команды2"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/olga-270/olga-270.jpg    1x,
+                    ./images/desktop/team/olga-270/olga-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/olga-354/olga-354.jpg    1x,
+                    ./images/tablet/team/olga-354/olga-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/olga-450/olga-450.jpg    1x,
+                    ./images/mobile/team/olga-450/olga-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="picture photo-team"
+                  src="./images/mobile/team/olga-450/olga-450.jpg"
+                  alt="фото члена команды2"
+                />
+              </picture>
+
               <div class="team-sign">
                 <h3 class="team-name-title">Ольга Репина</h3>
                 <p class="team-speciality">Frontend Developer</p>
@@ -320,12 +391,35 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="picture"
-                src="./images/teamcard3.jpg"
-                alt="фото члена команды3"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/nikolay-270/nikolay-270.jpg    1x,
+                    ./images/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/nikolay-354/nikolay-354.jpg    1x,
+                    ./images/tablet/team/nikolay-354/nikolay-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/nikolay-450/nikolay-450.jpg    1x,
+                    ./images/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="picture photo-team"
+                  src="./images/mobile/team/nikolay-450/nikolay-450.jpg"
+                  alt="фото члена команды3"
+                />
+              </picture>
+
               <div class="team-sign">
                 <h3 class="team-name-title">Николай Тарасов</h3>
                 <p class="team-speciality">Marketing</p>
@@ -362,12 +456,35 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="picture"
-                src="./images/teamcard4.jpg"
-                alt="фото члена команды4"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/mykhail-270/mykhail-270.jpg    1x,
+                    ./images/desktop/team/mykhail-270/mykhail-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/mykhail-354/mykhail-354.jpg    1x,
+                    ./images/tablet/team/mykhail-354/mykhail-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mykhail-450/mykhail-450.jpg    1x,
+                    ./images/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="picture photo-team"
+                  src="./images/mobile/team/mykhail-450/mykhail-450.jpg"
+                  alt="фото члена команды4"
+                />
+              </picture>
+
               <div class="team-sign">
                 <h3 class="team-name-title">Михаил Ермаков</h3>
                 <p class="team-speciality">UI Designer</p>
@@ -405,10 +522,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="section-title title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -457,10 +574,10 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!--Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__flex">
         <div class="footer-contacts">
           <a class="logo-link-footer link" href="./index.html"
@@ -531,9 +648,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop-modal is-hidden" data-modal>
+    <div class="backdrop-modal is-hidden" data-modal>
       <div class="modal-wind">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-wind-icon" width="18" height="18">
@@ -606,8 +723,8 @@
         </form>
       </div>
     </div>
-    
-    <script src="./js/modal.js"></script> -->
+
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

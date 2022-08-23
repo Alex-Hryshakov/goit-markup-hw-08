@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     padding: 48px 40px;
-    width: 100vw;
     height: 100vh;
 
   }
@@ -92,6 +91,10 @@
   }
 }
 
+.mobile-menu-contact__list {
+  margin-bottom: 64px;
+}
+
 .mobile-menu-contact__item-header:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -99,7 +102,7 @@
 .mobile-menu-social-list {
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
+  
 }
 
 .mobile-menu-social__list-item {

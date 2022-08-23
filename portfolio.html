@@ -43,6 +43,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contact__list list">
           <li class="contact__item__header">
             <a class="contact__link link" href="mailto:info@devstudio.com">
@@ -61,6 +66,60 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-modal-button"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-navigation list">
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link navigation-menu__link--current link" href=""
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contact__list list">
+            <li class="mobile-menu-contact__item-header">
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__text-phone link"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__item-header">
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__text-mail link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-social-list list">
+            <li class="mobile-menu-social__list-item">
+              <a href="" class="mobile-menu-social__list-link link">Instagram </a>
+            </li>
+            <li class="mobile-menu-social__list-item">
+              <a href="" class="mobile-menu-social__list-link link">Twitter </a>
+            </li>
+            <li class="mobile-menu-social__list-item">
+              <a href="" class="mobile-menu-social__list-link link">Facebook </a>
+            </li>
+            <li class="mobile-menu-social__list-item">
+              <a href="" class="mobile-menu-social__list-link link">Linkedin </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -91,13 +150,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-1.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/technokryak-370/technokryak-370.jpg    1x,
+                        images/desktop/portfolio-card-set/technokryak-370/technokryak-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/technokryak-354/technokryak-354.jpg    1x,
+                        images/tablet/portfolio-card-set/technokryak-354/technokryak-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/technocryak-450/technocryak-450.jpg    1x,
+                        images/mobile/portfolio-card-set/technocryak-450/technocryak-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/technocryak-450/technocryak-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -113,13 +194,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-2.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/poster-new-orlean-370/poster-new-orlean-370.jpg    1x,
+                        images/desktop/portfolio-card-set/poster-new-orlean-370/poster-new-orlean-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/poster-new-orlean-354/poster-new-orlean-354.jpg    1x,
+                        images/tablet/portfolio-card-set/poster-new-orlean-354/poster-new-orlean-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/poster-new-orlean-450/poster-new-orlean-450.jpg    1x,
+                        images/mobile/portfolio-card-set/poster-new-orlean-450/poster-new-orlean-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/poster-new-orlean-450/poster-new-orlean-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -135,13 +238,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-3.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/seafood-370/seafood-370.jpg    1x,
+                        images/desktop/portfolio-card-set/seafood-370/seafood-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/seafood-354/seafood-354.jpg    1x,
+                        images/tablet/portfolio-card-set/seafood-354/seafood-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/seafood-450/seafood-450.jpg    1x,
+                        images/mobile/portfolio-card-set/seafood-450/seafood-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/seafood-450/seafood-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -157,13 +282,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-4.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/prime-370/prime-370.jpg    1x,
+                        images/desktop/portfolio-card-set/prime-370/prime-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/prime-354/prime-354.jpg    1x,
+                        images/tablet/portfolio-card-set/prime-354/prime-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/prime-450/prime-450.jpg    1x,
+                        images/mobile/portfolio-card-set/prime-450/prime-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/prime-450/prime-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -179,13 +326,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-5.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/boxes-370/boxes-370.jpg    1x,
+                        images/desktop/portfolio-card-set/boxes-370/boxes-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/boxes-354/boxes-354.jpg    1x,
+                        images/tablet/portfolio-card-set/boxes-354/boxes-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/boxes-450/boxes-450.jpg    1x,
+                        images/mobile/portfolio-card-set/boxes-450/boxes-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/boxes-450/boxes-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -201,13 +370,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-6.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/inspiration-370/inspiration-370.jpg    1x,
+                        images/desktop/portfolio-card-set/inspiration-370/inspiration-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/inspiration-354/inspiration-354.jpg    1x,
+                        images/tablet/portfolio-card-set/inspiration-354/inspiration-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/inspiration-450/inspiration-450.jpg    1x,
+                        images/mobile/portfolio-card-set/inspiration-450/inspiration-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/inspiration-450/inspiration-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -223,13 +414,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-7.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/limited-edition-370/limited-edition-370.jpg    1x,
+                        images/desktop/portfolio-card-set/limited-edition-370/limited-edition-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/limited-edition-354/limited-edition-354.jpg    1x,
+                        images/tablet/portfolio-card-set/limited-edition-354/limited-edition-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/limited-edition-450/limited-edition-450.jpg    1x,
+                        images/mobile/portfolio-card-set/limited-edition-450/limited-edition-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/limited-edition-450/limited-edition-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -245,13 +458,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-8.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/lab-370/lab-370.jpg                    1x,
+                        images/desktop/portfolio-card-set/technokryak-370/technokryak-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/lab-354/lab-354.jpg    1x,
+                        images/tablet/portfolio-card-set/lab-354/lab-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/lab-450/lab-450.jpg    1x,
+                        images/mobile/portfolio-card-set/lab-450/lab-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/lab-450/lab-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -267,13 +502,35 @@
             <li class="portfolio-examples-item">
               <a class="portfolio-examles-links link" href="">
                 <div class="portfolio-img-wrapper">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/portfolio-9.jpg"
-                    alt="Пример нашего портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/desktop/portfolio-card-set/growing-business-370/growing-business-370.jpg    1x,
+                        images/desktop/portfolio-card-set/growing-business-370/growing-business-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images/tablet/portfolio-card-set/growing-business-354/growing-business-354.jpg    1x,
+                        images/tablet/portfolio-card-set/growing-business-354/growing-business-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images/mobile/portfolio-card-set/growing-business-450/growing-business-450.jpg    1x,
+                        images/mobile/portfolio-card-set/growing-business-450/growing-business-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="picture"
+                      src="images/mobile/portfolio-card-set/growing-business-450/growing-business-450.jpg"
+                      alt="Пример нашего портфолио"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие данные о компании
@@ -365,5 +622,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -12,10 +12,6 @@
     line-height: 0;
   }
 
-  .header {
-    border: 1px solid #ececec;
-  }
-
   .header__container {
     display: flex;
     align-items: center;
@@ -179,6 +175,10 @@
     @include font(26px, 700, 31px);
     color: var(--fourty-text-color);
   }
+}
+
+.header {
+  border: 1px solid #ececec;
 }
 
 .accent {

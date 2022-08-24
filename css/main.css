@@ -135,6 +135,14 @@ body {
     line-height: 1.1717857143;
   }
 }
+@media screen and (min-width: 280px) and (max-width: 449px) {
+  .mobile-menu-social__list-item {
+    margin-bottom: 15px;
+  }
+  .mobile-menu-social__list-item:not(:last-child) {
+    padding-left: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -317,9 +325,6 @@ body {
     padding: 0;
     line-height: 0;
   }
-  .header {
-    border: 1px solid #ececec;
-  }
   .header__container {
     display: flex;
     align-items: center;
@@ -463,6 +468,10 @@ body {
     color: var(--fourty-text-color);
   }
 }
+.header {
+  border: 1px solid #ececec;
+}
+
 .accent {
   color: var(--accent-color);
 }
@@ -471,12 +480,12 @@ body {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero/hero-480/hero-480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/hero-480/hero-480.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero/hero-480/hero-480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/hero-480/hero-480.jpg);
   }
 }
 .hero {
@@ -503,6 +512,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero-768.jpg);
   }
 }
@@ -793,7 +804,7 @@ body {
   .footer__flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer-contacts {
     text-align: center;
@@ -950,7 +961,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .nav-on-portfolio-list {
-    gap: 8px;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -991,6 +1001,7 @@ body {
 }
 .nav-on-portfolio-list {
   display: flex;
+  gap: 8px;
   margin-bottom: 50px;
 }
 
@@ -1047,7 +1058,7 @@ body {
   height: 100%;
   padding: 63px 24px;
   overflow: hidden;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: var(--transition-dur-tf);
   font-size: 18px;
   font-weight: 400;
